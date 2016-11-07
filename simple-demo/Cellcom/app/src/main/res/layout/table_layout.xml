@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1"
+>
+	<TableRow>
+	
+		<TextView 
+			android:text="用户名："
+			android:textStyle="bold"
+			android:gravity="right"
+			android:padding="3dip"
+		/>
+		<EditText
+			android:id="@+id/username"
+			android:padding="3dip"
+		/>
+			
+	</TableRow>
+	
+	<TableRow>
+		<TextView
+			android:text="密码："
+			android:textStyle="bold"
+			android:gravity="right"
+			android:padding="3dip"
+		/>
+		<EditText
+			android:id="@+id/password"
+			android:inputType="textPassword"
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+		/>
+	</TableRow>
+	<TableRow>
+		<TextView />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="showDate"
+			android:text="提交" />
+	</TableRow>
+</TableLayout>
